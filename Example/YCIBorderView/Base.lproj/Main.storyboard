@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="YCIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29D-Qz-q04" customClass="YCIBorderView">
+                                <rect key="frame" x="68.5" y="158.5" width="238" height="350"/>
+                                <subviews>
+                                    <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LTu-dH-gE1">
+                                        <rect key="frame" x="94.5" y="8" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeBorderPositions:" destination="whP-gf-Uak" eventType="valueChanged" id="G3q-xq-x6u"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehH-70-7uG">
+                                        <rect key="frame" x="0.0" y="159.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeBorderPositions:" destination="whP-gf-Uak" eventType="valueChanged" id="z3q-ez-Eij"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-j2-slk">
+                                        <rect key="frame" x="94.5" y="311" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeBorderPositions:" destination="whP-gf-Uak" eventType="valueChanged" id="Pc5-hW-e9j"/>
+                                        </connections>
+                                    </switch>
+                                    <switch opaque="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lC0-kD-bR0">
+                                        <rect key="frame" x="181" y="159.5" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="changeBorderPositions:" destination="whP-gf-Uak" eventType="valueChanged" id="T5v-Uy-5Fl"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ehH-70-7uG" firstAttribute="leading" secondItem="29D-Qz-q04" secondAttribute="leading" id="6N2-6x-U0w"/>
+                                    <constraint firstAttribute="width" constant="238" id="8r5-mL-0f4"/>
+                                    <constraint firstAttribute="trailing" secondItem="lC0-kD-bR0" secondAttribute="trailing" constant="8" id="AHv-Tc-JeF"/>
+                                    <constraint firstAttribute="bottom" secondItem="f3k-j2-slk" secondAttribute="bottom" constant="8" id="DxC-1S-Nxq"/>
+                                    <constraint firstItem="f3k-j2-slk" firstAttribute="centerX" secondItem="29D-Qz-q04" secondAttribute="centerX" id="DyY-kb-PEJ"/>
+                                    <constraint firstAttribute="height" constant="350" id="S9i-sT-Dea"/>
+                                    <constraint firstItem="LTu-dH-gE1" firstAttribute="top" secondItem="29D-Qz-q04" secondAttribute="top" constant="8" id="UaG-Es-iv5"/>
+                                    <constraint firstItem="ehH-70-7uG" firstAttribute="centerY" secondItem="29D-Qz-q04" secondAttribute="centerY" id="V8q-CX-dRR"/>
+                                    <constraint firstItem="LTu-dH-gE1" firstAttribute="centerX" secondItem="29D-Qz-q04" secondAttribute="centerX" id="oYI-5a-wDG"/>
+                                    <constraint firstItem="lC0-kD-bR0" firstAttribute="centerY" secondItem="29D-Qz-q04" secondAttribute="centerY" id="xv9-Y5-ISf"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YCIBorderView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fc-ju-2ZW">
+                                <rect key="frame" x="118.5" y="105.5" width="138" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="7jV-4M-bMB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cjE-AP-Cf7">
+                                <rect key="frame" x="135" y="543.5" width="105" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="0cw-Me-4tp"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="red"/>
+                                    <segment title="blue"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeBorderColor:" destination="whP-gf-Uak" eventType="valueChanged" id="EOY-Hx-ohF"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="29D-Qz-q04" firstAttribute="top" secondItem="3fc-ju-2ZW" secondAttribute="bottom" constant="30" id="0WP-Gs-Xci"/>
+                            <constraint firstItem="29D-Qz-q04" firstAttribute="centerX" secondItem="3fc-ju-2ZW" secondAttribute="centerX" id="8Xs-hn-lcC"/>
+                            <constraint firstItem="cjE-AP-Cf7" firstAttribute="centerX" secondItem="29D-Qz-q04" secondAttribute="centerX" id="Fb0-U7-Wbn"/>
+                            <constraint firstItem="cjE-AP-Cf7" firstAttribute="top" secondItem="29D-Qz-q04" secondAttribute="bottom" constant="35" id="I53-dH-yJt"/>
+                            <constraint firstItem="29D-Qz-q04" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="QVM-mD-rbE"/>
+                            <constraint firstItem="29D-Qz-q04" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="rtY-eH-dml"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="borderView" destination="29D-Qz-q04" id="ANn-M7-u7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
+        </scene>
+    </scenes>
+</document>

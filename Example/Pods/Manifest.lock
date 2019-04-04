@@ -1,0 +1,16 @@
+PODS:
+  - YCIBorderView (0.1.0)
+
+DEPENDENCIES:
+  - YCIBorderView (from `../`)
+
+EXTERNAL SOURCES:
+  YCIBorderView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  YCIBorderView: c86384c17d260c7be606ae78101692526dd4b448
+
+PODFILE CHECKSUM: 25b1ed9e8317b8b6bfc77e0dbde05c01d1206fbc
+
+COCOAPODS: 1.4.0

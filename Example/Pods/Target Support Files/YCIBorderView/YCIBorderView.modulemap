@@ -1,0 +1,6 @@
+framework module YCIBorderView {
+  umbrella header "YCIBorderView-umbrella.h"
+
+  export *
+  module * { export * }
+}

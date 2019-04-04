@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'YCIBorderView_Example' do
+  pod 'YCIBorderView', :path => '../'
+
+  target 'YCIBorderView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
