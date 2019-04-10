@@ -1,6 +1,5 @@
 # YCIBorderView
 
-<p align="center">
 <a href="https://github.com/YanChen-ing/YCIBorderView/"><img src="https://img.shields.io/cocoapods/v/YCIBorderView.svg?style=flat"></a>
 <a href="https://github.com/YanChen-ing/YCIBorderView/blob/master/README.md"><img src="https://img.shields.io/cocoapods/l/YCIBorderView.svg?style=flat"></a>
 <a href="https://github.com/YanChen-ing/YCIBorderView/"><img src="https://img.shields.io/cocoapods/p/YCIBorderView.svg?style=flat"></a>
